@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Login Form Example</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form method = "POST" action="http://localhost:3000/register" autocomplete="off">
+    <h1>Register Now</h1>
+    <div class="content">
+        <div class="input-field">
+            <input type="email" name="email" placeholder="Email" required autocomplete="nope" required>
+        </div>
+        <div class="input-field">
+            <input type="text" name="username" placeholder="Username" autocomplete="nope" required>
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" placeholder="Password" autocomplete="nope" required>
+        </div>
+        <div class="action">
+            <button><a href="/login">Login</a></button>
+            <button type="submit">Sign Up</button>
+        </div>
+      <!-- <button type="submit" class="link">Submit</button>
+      <a href="/register" class="link">Register</a> -->
+    </div>
+    
+  </form>
+</div>
+<!-- partial -->
+
+</body>
+</html>

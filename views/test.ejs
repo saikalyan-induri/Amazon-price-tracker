@@ -1,0 +1,15 @@
+<div class="cards">
+    <% list.forEach(function(user){ %>
+    <article class="card">
+        <header>
+            <h2><%= user.title %></h2>
+        </header>    
+        <img src="<%= user.photo %>" alt="Hot air balloons">
+        <div class="content">
+            <p> Traget-Price = <%=user.price %></p>
+        </div>
+    </article>
+    <% } ); %>
+</div>
+            
+    

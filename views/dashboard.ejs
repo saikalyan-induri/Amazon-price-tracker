@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="CSS/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+            Amazon-PriceTracker
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>
+  
+        <div class="nav-links">
+            <a href="/homepage" >Homepage</a>
+            <a href="/logout" >Logout</a>
+            <a href="/faq" >FAQ</a>
+        </div>
+    </div>
+    <div class="cards">
+        <% list.forEach(function(user){ %>
+        <article class="card">
+            <header>
+                <h3><%= user.title %></h3>
+            </header>   
+            <div class="imgHolder"> <img src="<%= user.photo %>" alt="Hot air balloons"></div> 
+           <h2 class="price"> Traget Price: ₹ <%=user.price %></h2>
+            <div class="content">
+                
+                <button class="button-30"><a class="deleteBtn" href="<%= user.url %> " target="_blank"> Buy Now</a> </button>
+                <button class="button-30 second"><a class="deleteBtn" href="/delete/<%= user.ID %>"> Remove </a> </button>
+                
+            </div>
+        </article>
+    <% } ); %>
+</div>
+
+    
+</body>
+</html>
+
+
+<!-- HTML !-->
+<!-- <button class="button-24" role="button">Button 24</button> -->
+
+<!-- /* CSS */ -->
